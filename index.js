@@ -8,6 +8,7 @@ var userClickedPattern = [];
 var gamePattern=[];
 // New sequence function
 function newSequence(){
+  $("h2").hide();
   // When ever a newSequence is genarated the userClickedPattern must be empty
   userClickedPattern=[];
   // Random number is generated from 0-3 to select the color from the button-color array
@@ -77,6 +78,5 @@ if($('h1').text()==="Press A Key to Start"){
 $('h2').click(function(){
   $("h1").text("Level "+level);
   newSequence();
-  $("h2").toggle();
 })
 }
