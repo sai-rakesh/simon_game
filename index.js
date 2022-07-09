@@ -70,8 +70,10 @@ function soundTrack(randomColorChosen){
 }
 // click any button for desktops or laptops
 $(document).keypress(function(){
-  $("h1").text("Level "+level);
+  if($('h1').text()==='Press A Key to Start'){
   newSequence();
+}
+$("h1").text("Level "+level);
 })
 // click here button for smart phones
 if($('h1').text()==="Press A Key to Start"){
